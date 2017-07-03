@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context="company.csf2017.com.chenjian.Index_one">
+
+    <com.chenjian.view.SildingMenu
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" ><!--顶部固定-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+           <include layout="@layout/left_menu"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_09"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_left_menu"
+                    android:layout_alignParentTop="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="欢迎登录“广东星光小学”晨检系统"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/parentsImage"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/icon_parents"
+                            />
+
+                        <Button
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/mesBtn"
+                            android:layout_marginLeft="250dp"
+                            android:background="@drawable/mes_icon"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:padding="@dimen/activity_vertical_margin">
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:id="@+id/btn1"
+                                android:text="@string/process"
+                                android:background="@drawable/shape"
+                                android:layout_marginLeft="10dp"
+                                android:backgroundTint="@color/textColor1"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="14dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:id="@+id/btn2"
+                                android:text="@string/system"
+                                android:background="@drawable/shape"
+                                android:layout_marginLeft="25dp"
+                                android:backgroundTint="@color/backgroundColor1"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="14dp" />
+
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:id="@+id/btn3"
+                                android:text="@string/result"
+                                android:background="@drawable/shape"
+                                android:layout_marginLeft="25dp"
+                                android:layout_gravity="right"
+                                android:backgroundTint="@color/backgroundColor2"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="16dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:id="@+id/btn4"
+                                android:text="@string/state"
+                                android:background="@drawable/shape"
+                                android:layout_marginLeft="25dp"
+                                android:backgroundTint="@color/backgroundColor4"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="@dimen/activity_vertical_margin"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/reading"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/red"
+                                />
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TableRow>
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="106dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/read_01" />
+
+                                    <TextView
+                                        android:layout_width="180dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/readBtn1"
+                                        android:text="@string/read1"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/activity_vertical_margin"/>
+                                </TableRow>
+                                <TableRow>
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="106dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/read_02" />
+
+                                    <TextView
+                                        android:layout_width="180dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/readBtn2"
+                                        android:text="@string/read2"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/activity_vertical_margin"/>
+                                </TableRow>
+                                <TableRow>
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="106dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/read_03" />
+
+                                    <TextView
+                                        android:layout_width="180dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/readBtn3"
+                                        android:text="@string/read3"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/activity_vertical_margin"/>
+                                </TableRow>
+                                <TableRow>
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="106dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/read_04" />
+
+                                    <TextView
+                                        android:layout_width="180dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/readBtn4"
+                                        android:text="@string/read2"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:layout_gravity="center"
+                                        android:padding="@dimen/activity_vertical_margin"/>
+                                </TableRow>
+
+
+                            </TableLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/more"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingTop="10dp"
+                            android:orientation="vertical"
+                            android:background="@color/white">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tips"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:background="@drawable/rectagle"
+                                android:backgroundTint="@color/red"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="炎热的夏日在空调房间里呆的时间不宜过长。长时间使用的空调房里因门窗紧闭而使室内新鲜空气含量少，宝宝呆的时间久了易......"
+                                android:textSize="12dp"
+                                android:textStyle="bold"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="16dp"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </com.chenjian.view.SildingMenu>
+
+</LinearLayout>

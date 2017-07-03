@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColor3"
+    android:orientation="vertical"
+    tools:context=".MesLiuyan"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true" ><!--顶部固定-->
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:id="@+id/returnBtn"
+            android:background="@drawable/return_icon"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="给医生留言"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="22dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="医生现在在线，有什么需要可以立即咨询~~"
+            android:textSize="14sp"
+            android:background="@drawable/rectagle"
+            android:backgroundTint="@color/textColor2"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rectagle"
+        android:backgroundTint="@color/white"
+        android:layout_alignParentBottom="true"
+        >
+
+        <EditText
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="company.csf2017.com.chenjian.register"
+    android:background="@drawable/bg_02"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="用户注册"
+        android:id="@+id/tv"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:paddingTop="25dp"
+        android:paddingLeft="130dp"
+        android:textColor="@color/colorPrimary" />
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+        <TableRow
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名："
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入手机号/QQ/邮箱号"
+                android:textSize="14dp"
+                android:selectAllOnFocus="true"
+                android:layout_column="2" />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在地："
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入您当前所在地"
+                android:textSize="14dp"
+                android:selectAllOnFocus="true"
+                android:layout_column="2" />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在幼儿园："
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的小孩所在学校名"
+                android:selectAllOnFocus="true"
+                android:textSize="14dp"
+                android:layout_column="2" />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在班级:"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的小孩所在班级"
+                android:selectAllOnFocus="true"
+                android:textSize="14dp"
+                android:layout_column="2" />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小孩姓名："
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的小孩姓名"
+                android:textSize="14dp"
+                android:selectAllOnFocus="true"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="密   码："
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:hint="请输入密码"
+                android:textSize="14dp"
+                android:layout_column="2" />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="确认密码："
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:hint="请再输入密码"
+                android:textSize="14dp"
+                android:layout_column="2" />
+        </TableRow>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注  册"
+            android:id="@+id/register"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">幼儿晨检系统</string>
+    <string name="department">教育与卫生主管部门</string>
+    <string name="parents">幼儿家长</string>
+    <string name="teachers">幼儿园教师及领导</string>
+    <string name="doctors">晨检医生</string>
+    <string name="process">晨检流程</string>
+    <string name="system">晨检制度</string>
+    <string name="result">晨检报告</string>
+    <string name="state">宝宝状态</string>
+    <string name="tips">温馨小贴士：</string>
+    <string name="reading">值得一读</string>
+    <string name="read1"><a href="#">夏季幼儿卫生保健小知识</a></string>
+    <string name="read2"><a href="#">夏季宝宝游泳要注意什么？</a></string>
+    <string name="read3"><a href="#">幼儿园夏季育儿知识:幼儿夏季饮食注意事项</a></string>
+    <string name="more">更多...</string>
+    <string name="childName">陈小某</string>
+    <string name="className">小（1）班</string>
+</resources>
